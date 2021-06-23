@@ -40,4 +40,19 @@ body {
 }
 	</style>
   </head>
+  <style>
+  @keyframes spinning {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+  }
+  .spin {
+    animation-name: spinning;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* linear | ease | ease-in | ease-out | ease-in-out */
+    animation-timing-function: linear;
+  }
+</style>
+
+<img src="drake1.png" style="display: block; margin-left: auto; margin-right: auto;" class="spin"/>
 </html>
